@@ -7,12 +7,14 @@
     --font-family-3: Coiny, sans-serif;
     --color-white: #ffffff;
     --nav-line-height: 2px;
+    --new-bg-color: lightgreen;
 }
 
 /* General Styles  */
 
 .body {
     font-family: var(--font-family-1);
+    background-color: var(--new-bg-color);
 }
 
 .main-color {
@@ -94,6 +96,29 @@ h1.page-title {
     overflow: hidden;
     background-color: #061f07;
   }
+
+  .mySlides {
+    position: relative;
+    width: 100%;
+  }
+
+  .numbertext {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.text {
+    position: absolute;
+    bottom: 10px; /* Adjust this value as needed */
+    left: 10px; /* Adjust this value as needed */
+    color: #fff;
+    font-size: 24px; /* Adjust font size as needed */
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: background color to improve readability */
+    padding: 5px; /* Optional: add some padding around the text */
+}
   
   /* Style for images */
   .slideshow-container img {
@@ -115,12 +140,13 @@ h1.page-title {
     width: auto;
     margin-top: -22px;
     padding: 16px;
-    color: white;
+    color: #fff;
     font-weight: bold;
     font-size: 18px;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
+    text-decoration: none;
   }
   
   /* Position the "next button" to the right */
