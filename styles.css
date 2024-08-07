@@ -47,7 +47,7 @@ h1.page-title {
 
 .page-footer {
     background-image: url("images/banner-header.png");
-    background-color: var(--background-color);
+    /* background-color: var(--background-color); */
     width: 100%;
     height: auto;
     background-position: center;
@@ -226,6 +226,7 @@ h1.page-title {
 #search-filters .form-group {
   text-align: center;
 }
+
 
   /* Fading animation */
   /* .fade {
