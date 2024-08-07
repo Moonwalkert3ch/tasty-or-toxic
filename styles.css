@@ -92,6 +92,7 @@ h1.page-title {
     height: 400px;
     margin: auto;
     overflow: hidden;
+    background-color: #061f07;
   }
   
   /* Style for images */
@@ -159,7 +160,7 @@ h1.page-title {
     height: 15px;
     width: 15px;
     margin: 0 2px;
-    background-color: #bbb;
+    background-color: #061f07;
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
@@ -168,12 +169,43 @@ h1.page-title {
   .active, .dot:hover {
     background-color: #717171;
   }
+
+  /* <!-- Plant header --> */
+
+  #plant-section {
+    /* background-image: url(images/poisonous\ plants.png); */
+    color: var(--color-white);
+  }
+
+  #plant-section h2 {
+    font-size: x-large;
+    font-weight: bolder;
+  }
   
+  .courseText:hover {
+    color: yellowgreen;
+    font-size: large;
+  }
+
+  /* searchbar styles */
+
+  .container-fluid {
+    background-color: #061f07;
+  }
+
+  #sort-by {
+    width: 100%; /* Adjust this value as needed */
+}
+
+#search-filters .form-group {
+  text-align: center;
+}
+
   /* Fading animation */
-  .fade {
+  /* .fade {
     animation-name: fade;
     animation-duration: 1.5s;
-  }
+  } */
   
   @keyframes fade {
     from { opacity: .4 }

@@ -1,0 +1,12 @@
+{
+  "name": "tasty-or-toxic",
+  "version": "1.0.0",
+  "description": "this is for the T3 Demo Day",
+  "main": "edible.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
