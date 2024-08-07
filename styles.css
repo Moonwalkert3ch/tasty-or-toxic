@@ -213,11 +213,22 @@ h1.page-title {
     font-size: large;
   }
 
+/* title and quote for species */
+.container-species {
+  background-color: #061f07;
+}
+
   /* searchbar styles */
 
-  .container-fluid {
+  .container-search {
     background-color: #061f07;
   }
+  /* #plants-section{
+    background-color: #061f07;
+  } */
+  /* #plants-section {
+    background-color: #061f07;
+  } */
 
   #sort-by {
     width: 100%; /* Adjust this value as needed */
