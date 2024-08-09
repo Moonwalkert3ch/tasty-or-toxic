@@ -1,0 +1,251 @@
+:root {
+    --main-color: green;
+    --opacity-value: 0.9;
+    --background-color: olive;
+    --font-family-1: "Source Sans Pro", sans-serif;
+    --font-family-2: "Spin Cycle OT", sans-serif;
+    --font-family-3: Coiny, sans-serif;
+    --color-white: #ffffff;
+    --nav-line-height: 2px;
+    --new-bg-color: lightgreen;
+}
+
+/* General Styles  */
+
+.body {
+    font-family: var(--font-family-1);
+    background-color: var(--new-bg-color);
+}
+
+.main-color {
+    color: var(--main-color);
+}
+
+/* Header Styles  */
+.header {
+    background-image: url("images/banner-header.png");
+    background-color: var(--background-color);
+    width: 100%;
+    height: auto;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1.page-title {
+    color: rgb(193, 231, 116);;
+}
+
+.nav-link-yellow-green {
+    color: rgb(193, 231, 116);;
+    text-decoration: none;
+}
+
+.nav-link-yellow-green:hover {
+    color: var(--color-white);
+}
+
+.page-footer {
+    background-image: url("images/banner-header.png");
+    /* background-color: var(--background-color); */
+    width: 100%;
+    height: auto;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* Button container  */
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .explore-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4CAF50;
+    border: 2px solid #2E8B57;
+    color: yellowgreen;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: darkgreen;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .explore-button i {
+    margin-right: 8px; 
+    font-size: 20px;
+  }
+  
+  .explore-button:hover {
+    background-color: #4CAF50;
+  }
+
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Slideshow container */
+  .slideshow-container {
+    height: 400px;
+    margin: auto;
+    overflow: hidden;
+    background-color: #061f07;
+  }
+
+  .mySlides {
+    position: relative;
+    width: 100%;
+  }
+
+  .numbertext {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.text {
+    position: absolute;
+    bottom: 10px; /* Adjust this value as needed */
+    left: 10px; /* Adjust this value as needed */
+    color: #fff;
+    font-size: 24px; /* Adjust font size as needed */
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: background color to improve readability */
+    padding: 5px; /* Optional: add some padding around the text */
+}
+  
+  /* Style for images */
+  .slideshow-container img {
+    width: 160px;
+    display: block;
+    border-radius: 75px;
+  }
+  
+  /* Hide the images by default */
+  /* .mySlides {
+    display: none;
+  } */
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    text-decoration: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #061f07;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+
+  /* <!-- Plant header --> */
+
+  #plant-section {
+    /* background-image: url(images/poisonous\ plants.png); */
+    color: var(--color-white);
+  }
+
+  #plant-section h2 {
+    font-size: x-large;
+    font-weight: bolder;
+  }
+  
+  .courseText:hover {
+    color: yellowgreen;
+    font-size: large;
+  }
+
+/* title and quote for species */
+.container-species {
+  background-color: #061f07;
+}
+
+  /* searchbar styles */
+
+  .container-search {
+    background-color: #061f07;
+  }
+  /* #plants-section{
+    background-color: #061f07;
+  } */
+  /* #plants-section {
+    background-color: #061f07;
+  } */
+
+  #sort-by {
+    width: 100%; /* Adjust this value as needed */
+}
+
+#search-filters .form-group {
+  text-align: center;
+}
+
+
+  /* Fading animation */
+  /* .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  } */
+  
+  @keyframes fade {
+    from { opacity: .4 }
+    to { opacity: 1 }
+  }
