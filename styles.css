@@ -46,7 +46,7 @@ h1.page-title {
 }
 
 .page-footer {
-    background-image: url("images/banner-header.png");
+    background-image: url("images/hiking-trail-2.png");
     /* background-color: var(--background-color); */
     width: 100%;
     height: auto;
@@ -102,6 +102,10 @@ h1.page-title {
     width: 100%;
   }
 
+  .mySlides img {
+    height: 400px;
+    width: 350px;
+  }
   .numbertext {
     position: absolute;
     top: 10px;
@@ -110,7 +114,7 @@ h1.page-title {
     font-weight: bold;
 }
 
-.text {
+.mySlides .text {
     position: absolute;
     bottom: 10px; /* Adjust this value as needed */
     left: 10px; /* Adjust this value as needed */

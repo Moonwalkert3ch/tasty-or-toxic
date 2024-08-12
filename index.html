@@ -78,49 +78,55 @@
             </div>
         </div>
         <!--Carousel Section -->
-        <div class="image-carousel">
-            <!-- Full-width images with number and caption text -->
-            <div class="mySlides ">
-                <div class="numbertext">1 / 3</div>
-                <img src="images/edible plants.png" style="width:100%; height: 200px;">
-                <div class="text">Edible plants</div>
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-8">
+                    <div class="image-carousel">
+                        <!-- Full-width images with number and caption text -->
+                         <div class="mySlides text-center">
+                            <div class="numbertext">1 / 3</div>
+                            <img src="images/nastartium.jpg" class="img-fluid mx-auto" alt="edible plants">
+                            <div class="pt-3">Edible plants</div>
+                        </div>
+                        
+                    <div class="mySlides text-center">
+                        <div class="numbertext">2 / 3</div>
+                        <img src="images/poisonous plants.png" class="img-fluid mx-auto" alt="toxic plants">
+                        <div class="pt-3">Toxic plants</div>
+                    </div>
+                    
+                    <div class="mySlides text-center">
+                        <div class="numbertext">3 / 3</div>
+                        <img src="images/hiking-trail.jpg" class="img-fluid mx-auto" alt="hiking trail">
+                        <div class="pt-3">Hiking trail</div>
+                    </div>
+                    
+                    <!-- Next and previous buttons -->
+                     <a class="prev" onclick="plusSlides(-1)" style="color: white;">&#10094;</a>
+                     <a class="next" onclick="plusSlides(1)" style="color: white;">&#10095;</a>
+                    
+                    </div>
+                </div>
             </div>
 
-            <div class="mySlides ">
-                <div class="numbertext">2 / 3</div>
-                <img src="images/poisonous plants.png" style="width:100%; height: 200px;">
-                <div class="text">Toxic plants</div>
-            </div>
-
-            <div class="mySlides ">
-                <div class="numbertext">3 / 3</div>
-                <img src="images/banner-header.png" style="width:100%; height: 200px;">
-                <div class="text">Hiking trail</div>
-            </div>
-
-            <!-- Next and previous buttons -->
-            <a class="prev" onclick="plusSlides(-1)" style="color: white;">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)" style="color: white;">&#10095;</a>
-        </div>
-
-        <br>
 
         <!-- The dots/circles -->
-        <div style="text-align:center">
+        <div class="text-center">
             <span class="dot" onclick="currentSlide(1)"></span>
             <span class="dot" onclick="currentSlide(2)"></span>
             <span class="dot" onclick="currentSlide(3)"></span>
         </div>
-
-        <!-- All Plants Section -->
+    </div>
+    <!-- All Plants Section -->
+     <div class="container-fluid all-plants">
         <!-- Plant header -->
-        <div class="container-species text-center px-0 py-5 m-0">
-            <section id="plant-section" class="col-12 text-center pb-5 text-black">
+        <div class="container-species text-center py-3 m-0">
+            <section id="plant-section" class="col-12 text-center text-black">
                 <h2 class="Plant-header text-center">
                     Plant Species
                 </h2>
                 <div>
-                    <div class="d-flex flex-column justify-content-center text-center m-5">
+                    <div class="d-flex flex-column justify-content-center text-center">
                         <div class="courseText">&lsaquo;&lsaquo; To eat or Not to eat</div>
                         <div class="courseText"><span class="text-violet font-weight-bold mr-1 courseText">That</span>
                             is the question. &rsaquo;&rsaquo;</div>
@@ -131,10 +137,10 @@
 
         <!-- Plant Species SearchBar Section -->
         <div class="container-search p-0" id="search-filters">
-            <div class="d-flex justify-content-center py-4">
-                <div class="container py-4 text-white text-uppercase font-weight-bold">
+            <div class="d-flex justify-content-center pt-3">
+                <div class="container text-white text-uppercase font-weight-bold">
                     <form>
-                        <div class="row">
+                        <div class="row justify-content-center">
                             <div class="col-md-6 col-lg-4 form-group">
                                 <label for="sort-by" class="d-block text-white" style="font-size: 1.25rem;">Sort
                                     By:</label>
@@ -151,6 +157,7 @@
                 </div>
             </div>
         </div>
+     </div>
 
         <!-- Poisonous Plants Table -->
         <div class="container mt-5" id="plants-section">
