@@ -89,24 +89,17 @@ h1.page-title {
     box-sizing: border-box;
   }
   
-  /* Picture carousel container */
-
-  .carousel-control-prev, .carousel-control-next {
-    display: none;
+  /* Slideshow container */
+  .slideshow-container {
+    height: 400px;
+    margin: auto;
+    overflow: hidden;
+    background-color: #061f07;
   }
 
-  .carousel-indicators {
-    position: static;
-    bottom: -30px;
-  }
-
-  .carousel-caption {
-    position: absolute;
-  }
-
-  .carousel-inner img {
-    height: 300px;
-    width: 30px;
+  .mySlides {
+    position: relative;
+    width: 100%;
   }
 
   .numbertext {
