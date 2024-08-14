@@ -112,8 +112,6 @@ document.addEventListener("DOMContentLoaded", function() {
                  class="img-thumbnail" 
                  onerror="this.onerror=null;this.src='${secondImageURL}';this.onerror=function(){this.src='${thirdImageURL}';this.onerror=function(){this.src='${fourthImageURL}';this.onerror=function(){this.src='${fifthImageURL}';this.onerror=function(){this.src='${defaultPlaceholderURL}';};};};};">
           </td>
-          <td>${danger}</td>
-          <td>${firstAidTips}</td>
         </tr>
       `;
       tableBody.insertAdjacentHTML('beforeend', row);
