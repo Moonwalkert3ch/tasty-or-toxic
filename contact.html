@@ -47,7 +47,7 @@
                     <a href="#plant-section" class="nav-link nav-link-yellow-green">PLANTS</a>
                 </li>
                 <li class="nav-item mx-3">
-                    <a href="contact.html" class="nav-link nav-link-yellow-green">CONTACT US</a>
+                    <a href="#contact-us" class="nav-link nav-link-yellow-green">CONTACT US</a>
                 </li>
             </ul>
         </nav>
@@ -61,124 +61,47 @@
         </div>
     </header>
     <main>
-        <div class="About-guide" id="Guide-Section">
-            <h2 class="informational-section text-center">GUIDE</h2>
-            <h3> Further text will be displayed here possibly in columns but this a spacer or placeholder just showing
-                this area would be filled with text and possibly followed by a call to action button to take us to the
-                plants by means of another link.</h3>
-            <!-- Explore button idea -->
-            <div class="button-container">
-                <a href="#plant-section" class="explore-button">
-                    <i class="fa fa-book" style="font-size:36px;color: rgb(193, 231, 116);"></i> Explore
-                </a>
-            </div>
-        </div>
-        <!--Carousel Section -->
-        <div class="image-carousel">
-            <!-- Full-width images with number and caption text -->
-            <div class="mySlides ">
-                <div class="numbertext">1 / 3</div>
-                <img src="images/edible plants.png" style="width:100%; height: 200px;">
-                <div class="text">Edible plants</div>
-            </div>
-
-            <div class="mySlides ">
-                <div class="numbertext">2 / 3</div>
-                <img src="images/poisonous plants.png" style="width:100%; height: 200px;">
-                <div class="text">Toxic plants</div>
-            </div>
-
-            <div class="mySlides ">
-                <div class="numbertext">3 / 3</div>
-                <img src="images/banner-header.png" style="width:100%; height: 200px;">
-                <div class="text">Hiking trail</div>
-            </div>
-
-            <!-- Next and previous buttons -->
-            <a class="prev" onclick="plusSlides(-1)" style="color: white;">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)" style="color: white;">&#10095;</a>
+        <body>
+      <!-- Contact section-->
+    <section id="contact">
+        <!-- Contact Us Form Section -->
+        <div id="contact-us-head" class="container mt-5">
+            <h2 class="text-center">Contact Us</h2>
+            <form id="feedback-form" class="mt-4">
+                <div class="form-group">
+                    <label for="feedback">Your Feedback:</label>
+                    <textarea id="feedback" name="feedback" class="form-control" rows="4"
+                        placeholder="Share your thoughts with us..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-dark mt-3">Submit Feedback</button>
+            </form>
+            <div id="feedback-response" class="mt-3"></div>
         </div>
 
-        <br>
+    </section>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.getElementById('feedback-form').addEventListener('submit', function (event) {
+                event.preventDefault(); // Prevent default form submission
 
-        <!-- The dots/circles -->
-        <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-        </div>
+                const feedback = document.getElementById('feedback').value;
 
-        <!-- All Plants Section -->
-        <!-- Plant header -->
-        <div class="container-species text-center px-0 py-5 m-0">
-            <section id="plant-section" class="col-12 text-center pb-5 text-black">
-                <h2 class="Plant-header text-center">
-                    Plant Species
-                </h2>
-                <div>
-                    <div class="d-flex flex-column justify-content-center text-center m-5">
-                        <div class="courseText">&lsaquo;&lsaquo; To eat or Not to eat</div>
-                        <div class="courseText"><span class="text-violet font-weight-bold mr-1 courseText">That</span>
-                            is the question. &rsaquo;&rsaquo;</div>
+                // Log the feedback to the console (for debugging)
+                console.log('Feedback received:', feedback);
+
+                // Display the success message
+                document.getElementById('feedback-response').innerHTML = `
+                    <div class="alert alert-success" role="alert">
+                        Thank you for your feedback! We appreciate your input.
                     </div>
-                </div>
-            </section>
-        </div>
+                `;
 
-        <!-- Plant Species SearchBar Section -->
-        <div class="container-search p-0" id="search-filters">
-            <div class="d-flex justify-content-center py-4">
-                <div class="container py-4 text-white text-uppercase font-weight-bold">
-                    <form>
-                        <div class="row">
-                            <div class="col-md-6 col-lg-4 form-group">
-                                <label for="sort-by" class="d-block text-white" style="font-size: 1.25rem;">Sort
-                                    By:</label>
-                                <div class="input-group mb-2">
-                                    <select name="sort-by" id="sort-by" class="form-control">
-                                        <option value="all">All</option>
-                                        <option value="edible">Edible</option>
-                                        <option value="poisonous">Poisonous</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-
-        <!-- Poisonous Plants Table -->
-        <div class="container mt-5" id="plants-section">
-            <h2>List of Plants</h2>
-            <input type="text" id="searchInput" class="form-control mb-3" placeholder="Search...">
-            <div class="table-responsive">
-                <table class="table table-striped table-bordered table-hover table-sm" id="dataTable">
-                    <thead class="thead-dark">
-                        <tr>
-                            <th>ID</th>
-                            <th>Common Name</th>
-                            <th>Scientific Name</th>
-                            <th>Other Names</th>
-                            <th>Cycle</th>
-                            <th>Image</th>
-
-                        </tr>
-                    </thead>
-                    <tbody id="tableBody">
-                        <!-- Table rows will be populated here -->
-                    </tbody>
-                </table>
-            </div>
-            <!-- Pagination Controls -->
-            <div class="container mt-3">
-                <nav aria-label="Page navigation">
-                    <ul class="pagination justify-content-center" id="pagination">
-                        <!-- Pagination buttons will be inserted here by JavaScript -->
-                    </ul>
-                </nav>
-            </div>
-        </div>
+                // Clear the feedback field
+                document.getElementById('feedback').value = '';
+            });
+        });
+    </script>
+        </body>
     </main>
     <!--Footer section-->
     <footer class="page-footer font-small text-white">

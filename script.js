@@ -28,7 +28,7 @@ function showSlides(n) {
 }
 
 // Fetch API and Pagination
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
   const apiKey = 'sk-r7GO66b149f0237136439';
   const apiBaseURL = 'https://perenual.com/api/species-list?key=' + apiKey;
   const tableBody = document.getElementById('tableBody');
@@ -43,11 +43,11 @@ document.addEventListener("DOMContentLoaded", function() {
   let totalPages = 0;
   let allData = [];
 
-  sortBy.addEventListener('change', function() {
-      const selectedOption = sortBy.value;
-      tableBody.innerHTML = ''; // Clear table before new data is loaded
-      currentPage = 1; // Reset to first page
-      fetchData(selectedOption);
+  sortBy.addEventListener('change', function () {
+    const selectedOption = sortBy.value;
+    tableBody.innerHTML = ''; // Clear table before new data is loaded
+    currentPage = 1; // Reset to first page
+    fetchData(selectedOption);
   });
 
   function fetchData(option) {
@@ -112,8 +112,7 @@ document.addEventListener("DOMContentLoaded", function() {
                  class="img-thumbnail" 
                  onerror="this.onerror=null;this.src='${secondImageURL}';this.onerror=function(){this.src='${thirdImageURL}';this.onerror=function(){this.src='${fourthImageURL}';this.onerror=function(){this.src='${fifthImageURL}';this.onerror=function(){this.src='${defaultPlaceholderURL}';};};};};">
           </td>
-          <td>${danger}</td>
-          <td>${firstAidTips}</td>
+        
         </tr>
       `;
       tableBody.insertAdjacentHTML('beforeend', row);
@@ -126,7 +125,7 @@ document.addEventListener("DOMContentLoaded", function() {
       const button = document.createElement('li');
       button.className = 'page-item';
       button.innerHTML = `<a class="page-link" href="#">${i}</a>`;
-      button.addEventListener('click', function(event) {
+      button.addEventListener('click', function (event) {
         event.preventDefault();
         currentPage = i;
         populateTable();
@@ -148,7 +147,7 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 
   // Search feature
-  searchInput.addEventListener('input', function() {
+  searchInput.addEventListener('input', function () {
     const searchTerm = searchInput.value.toLowerCase();
     const rows = tableBody.getElementsByTagName('tr');
     Array.from(rows).forEach(row => {
@@ -162,3 +161,5 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
 });
+
+

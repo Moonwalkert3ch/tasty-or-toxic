@@ -249,3 +249,14 @@ h1.page-title {
     from { opacity: .4 }
     to { opacity: 1 }
   }
+  #contact-us {
+    color: yellowgreen;
+  }
+
+  #contact-us-head {
+    color: #061f07;
+  }
+
+  #btn {
+    color: green;
+  }
