@@ -101,12 +101,12 @@ document.addEventListener("DOMContentLoaded", function() {
 
       const row = `
         <tr>
-          <td>${item.id}</td>
-          <td>${item.common_name}</td>
-          <td>${item.scientific_name.join(', ')}</td>
-          <td>${item.other_name.join(', ')}</td>
-          <td>${item.cycle}</td>
-          <td>
+          <td scope="row" data-label="ID">${item.id}</td>
+          <td data-label="Common Name">${item.common_name}</td>
+          <td data-label="Scientific Name">${item.scientific_name.join(', ')}</td>
+          <td data-label="Other Name">${item.other_name.join(', ')}</td>
+          <td data-label="Cycle">${item.cycle}</td>
+          <td data-label="Plant Image">
             <img src="${firstImageURL}" 
                  alt="${item.common_name}" 
                  class="img-thumbnail" 
