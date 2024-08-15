@@ -39,4 +39,5 @@ Check out the live project here: [Tasty or Toxic](https://moonwalkert3ch.github.
 
 ### Rachael Bradford (Moonwalker)
 I'm a passionate software developer with experience in both front-end and back-end development. I thrive on creating efficient, user-friendly applications and continuously strive to improve my skills and knowledge in the field.
+
 [LinkedIn](https://www.linkedin.com/in/rachaelbradford/) | [GitHub](https://github.com/Moonwalkert3ch)
