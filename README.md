@@ -34,7 +34,7 @@ Check out the live project here: [Tasty or Toxic](https://moonwalkert3ch.github.
 ### Courtney Graham
 [LinkedIn](https://www.linkedin.com/in/courtney-graham918/) | [GitHub](https://github.com/grahacr)
 
-### Jesse Brumley
+### Jesse Brumley 
 [LinkedIn](https://www.linkedin.com/in/jessebrumley/) | [GitHub](https://github.com/jessebrumley)
 
 ### Rachael Bradford (Moonwalker)
